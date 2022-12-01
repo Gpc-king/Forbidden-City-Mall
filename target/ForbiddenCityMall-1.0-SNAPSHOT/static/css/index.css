@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: #F6F2E8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bar {
+    width: 100%;
+    height: 25px;
+    padding: 5px 0;
+    border-bottom: 1px solid #E1E1E1;
+    background-color: #EEEEEE;
+}
+
+.bar_title {
+    width: 180px;
+    height: 25px;
+    float: left;
+    margin-left: 15%;
+}
+
+.bar_title p {
+    line-height: 25px;
+    font-weight: bold;
+    color: #999;
+}
+
+.bar_rl {
+    height: 25px;
+    float: right;
+}
+
+.bar_rl p {
+    width: 200px;
+    text-align: right;
+    padding-right: 20px;
+    overflow: hidden;
+    line-height: 25px;
+    color: #999999;
+}
+
+.bar_time {
+    margin-right: 15%;
+    margin-left: 25px;
+}
+
+.bar_time p {
+    line-height: 25px;
+    float: right;
+    color: #999999;
+}
+
+.ad {
+    width: 100%;
+    height: auto;
+}
+
+.ad img {
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: #B29458;
+}
+
+.nav ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    font-size: 20px;
+    border: 1px solid #B29458;
+    color: #FFF;
+    padding: 8px;
+    display: inline;
+    text-align: center;
+    padding: 0px 10px;
+    line-height: 50px;
+}
+
+.nav li:hover {
+    background-color: crimson;
+    border: 1px dashed crimson;
+    transition-duration: 1s;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+}
+
+.bottom {
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.bottom ul {
+    height: 90px;
+    line-height: 25px;
+}
+
+.cate {
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/c11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cate ul {
+    text-align: center;
+    display: inline;
+    color: #FFF;
+    font-size: 25px;
+}
+
+.cate ul li {
+    line-height: 50px;
+}
+
+.cate ul li span {
+    font-size: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.info {
+    width: 100%;
+    height: 471px;
+    border-radius: 10% 10%;
+    padding-top: 20px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg1.jpg);
+}
+
+.info ul {
+    display: inline;
+    height: 160px;
+    color: #FFF;
+    font-size: 25px;
+}
+
+.info ul li {
+    line-height: 50px;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+  http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--加载注解扫描,扫描最小的最全包-->
+    <context:component-scan base-package="com.peng.fcmall"/>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order" value="1"/>
+        <property name="prefix" value="/WEB-INF/templates/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 配置Thymeleaf视图解析器 -->
+    <bean id="viewResolver" class="org.thymeleaf.spring5.view.ThymeleafViewResolver">
+        <property name="order" value="2"/>
+        <property name="characterEncoding" value="UTF-8"/>
+        <property name="templateEngine">
+            <bean class="org.thymeleaf.spring5.SpringTemplateEngine">
+                <property name="templateResolver">
+                    <bean class="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver">
+
+                        <!-- 视图前缀 -->
+                        <property name="prefix" value="/WEB-INF/templates/"/>
+
+                        <!-- 视图后缀 -->
+                        <property name="suffix" value=".html"/>
+                        <property name="templateMode" value="HTML5"/>
+                        <property name="characterEncoding" value="UTF-8" />
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+    <!--加载配置文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <!--加载数据库-->
+    <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
+        <property name="driverClassName" value="${property.driver}"/>
+        <property name="url" value="${property.url}"/>
+        <property name="username" value="${property.name}"/>
+        <property name="password" value="${property.pass}"/>
+    </bean>
+    <!--创建jdbcTemplate-->
+    <bean id="jdbcTamplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--主页-->
+    <mvc:view-controller path="/" view-name="index"/>
+    <mvc:view-controller path="/user" view-name="registerOrLogin"/>
+    <mvc:view-controller path="/nav/index" view-name="index"/>
+    <mvc:view-controller path="/admin/add" view-name="admin_userInsert"/>
+    <!--处理静态资源-->
+    <mvc:default-servlet-handler/>
+    <!--开启mvc注解驱动-->
+    <mvc:annotation-driven/>
+</beans>

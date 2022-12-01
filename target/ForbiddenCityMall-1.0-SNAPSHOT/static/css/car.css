@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bar {
+    width: 100%;
+    height: 25px;
+    padding: 5px 0;
+    border-bottom: 1px solid #E1E1E1;
+    background-color: #EEEEEE;
+}
+
+.bar_title {
+    width: 180px;
+    height: 25px;
+    float: left;
+    margin-left: 15%;
+}
+
+.bar_title p {
+    line-height: 25px;
+    font-weight: bold;
+    color: #999;
+}
+
+.bar_rl {
+    height: 25px;
+    float: right;
+}
+
+.bar_rl p {
+    width: 200px;
+    text-align: right;
+    padding-right: 20px;
+    overflow: hidden;
+    line-height: 25px;
+    color: #999999;
+}
+
+.bar_time {
+    margin-right: 15%;
+    margin-left: 25px;
+}
+
+.bar_time p {
+    line-height: 25px;
+    float: right;
+    color: #999999;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: #B29458;
+}
+
+.nav ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    font-size: 20px;
+    border: 1px solid #B29458;
+    color: #FFF;
+    padding: 8px;
+    display: inline;
+    text-align: center;
+    padding: 0px 10px;
+    line-height: 50px;
+}
+
+.nav li:hover {
+    background-color: crimson;
+    border: 1px dashed crimson;
+    transition-duration: 1s;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+}
+
+.pro {
+    width: 100%;
+}
+
+.pro_inner {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+    background-color: rgb(243, 240, 235);
+    padding-bottom: 20px;
+}
+
+.pro_inner ul {
+    list-style: none;
+    display: inline;
+}
+
+.pro_card {
+    width: 250px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(153, 153, 153, 0.3);
+}
+
+.pro_card_info {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.pro_card_num, .pro_card_price {
+    width: 35%;
+    float: left;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+.pro_card_title {
+    margin: 0 auto;
+    width: 95%;
+    font-size: 20px;
+}
+
+.bottom {
+    position: relative;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.bottom ul {
+    height: 90px;
+    line-height: 25px;
+    list-style: none;
+}
+
+.container {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.car {
+    width: 50%;
+    height: 155px;
+    margin: 10px auto;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.car_img, .car_title {
+    float: left;
+}
+
+.car_img {
+    margin-right: 10px;
+}
+
+.car_title h3 {
+    margin-top: 10px;
+}
+
+.car_title p {
+    margin-top: 10px;
+}
+
+.allInfo {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.allInfos {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.allInfos p:nth-child(1) {
+    width: 90px;
+    margin: 0 auto;
+    border-radius: 10px;
+    line-height: 50px;
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+.allInfos p:nth-child(2), p:nth-child(3) {
+    line-height: 30px;
+}
+
+.bt {
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    background-color: rgba(220, 20, 60, 0.2);
+    border: 1px solid #DC143C;
+}
+
+.bs {
+    margin-left: 10px;
+    height: 25px;
+    width: 60px;
+    background-color: rgba(220, 20, 60, 0.2);
+    border: 1px solid #DC143C;
+}
