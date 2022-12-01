@@ -51,9 +51,6 @@
         <li></li>
         <li><h2>店铺公告</h2></li>
         <li>紫禁城的小屋 - The Forbidden City Mall</li>
-        <li>-·-·-·-·-·-·-&nbsp;&nbsp;&nbsp;&nbsp;一&nbsp;&nbsp;组&nbsp;&nbsp;&nbsp;&nbsp;-·-·-·-·-·-·-</li>
-        <li>郭鹏程&nbsp;&nbsp;王高旭&nbsp;&nbsp;欧阳志豪</li>
-        <li>方玲玉&nbsp;&nbsp;汤小洁&nbsp;&nbsp;邓佳慧&nbsp;&nbsp;黄帆&nbsp;&nbsp;</li>
     </ul>
     </div>
 </div>
